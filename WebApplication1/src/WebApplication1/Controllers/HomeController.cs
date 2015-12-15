@@ -20,6 +20,10 @@ namespace WebApplication1.Controllers
             return View();
         }
 
+        /// <summary>
+        /// Dummyt comment for Contact
+        /// </summary>
+        /// <returns></returns>
         public IActionResult Contact()
         {
             ViewData["Message"] = "Your contact page.";
