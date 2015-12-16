@@ -22,6 +22,11 @@ namespace WindowsFormsApplication1
             MessageBox.Show((Convert.ToDouble(textBox1.Text) + Convert.ToDouble(textBox2.Text)).ToString());
         }
 
+        /// <summary>
+        /// Added comment button2_Click
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button2_Click(object sender, EventArgs e)
         {
             MessageBox.Show((Convert.ToDouble(textBox1.Text) - Convert.ToDouble(textBox2.Text)).ToString());
