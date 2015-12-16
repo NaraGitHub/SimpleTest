@@ -13,11 +13,19 @@ namespace WindowsFormsApplication1
 {
     public partial class Form1 : Form
     {
+        /// <summary>
+        /// Form1
+        /// </summary>
         public Form1()
         {
             InitializeComponent();
         }
 
+        /// <summary>
+        /// button1_Click
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button1_Click(object sender, EventArgs e)
         {
             string result = (Convert.ToDouble(textBox1.Text) + Convert.ToDouble(textBox2.Text)).ToString();
