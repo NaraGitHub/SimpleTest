@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,7 +20,10 @@ namespace WindowsFormsApplication1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show((Convert.ToDouble(textBox1.Text) + Convert.ToDouble(textBox2.Text)).ToString());
+            string result = (Convert.ToDouble(textBox1.Text) + Convert.ToDouble(textBox2.Text)).ToString();
+    
+            string jsonValue = JsonConvert.SerializeObject(new { value1 = 1, Value2 = 2 });
+            MessageBox.Show(result + " : " + jsonValue);
         }
 
         /// <summary>
@@ -29,7 +33,9 @@ namespace WindowsFormsApplication1
         /// <param name="e"></param>
         private void button2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show((Convert.ToDouble(textBox1.Text) - Convert.ToDouble(textBox2.Text)).ToString());
+           string result = (Convert.ToDouble(textBox1.Text) - Convert.ToDouble(textBox2.Text)).ToString();
+            string jsonValue = JsonConvert.SerializeObject(new { value1 = 1 });
+            MessageBox.Show(result + " : " + jsonValue);
         }
     }
 }
